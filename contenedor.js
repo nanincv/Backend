@@ -85,6 +85,9 @@ class Contenedor {
 // Creo el objeto a partir de la clase
 const productos = new Contenedor("productos.txt");
 
+module.exports = Contenedor;
+
+/* 
 //Funcion que invoca los metodos
 async function Data() {
   //Agrego una producto 1
@@ -139,3 +142,5 @@ async function Data() {
 }
 
 Data();
+
+*/
