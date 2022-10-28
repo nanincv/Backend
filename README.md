@@ -2,7 +2,11 @@
 ### Servidor con Express
 
 Visitar el [Proyecto en Glitch][glitch]
-[glitch]: https://fish-marked-stool.glitch.me/
+[glitch]:https://fish-marked-stool.glitch.me/
+
+Me llamo Javier Cristóbal y tengo un blog sobre [productividad mac][blog].
+En dicha [web][blog] recopilo artículos sobre todo lo relacionado con automatización, gestión y eficiencia.
+[blog]: http://limni.net/blog/
 
 ### Consigna
 
