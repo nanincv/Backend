@@ -1,7 +1,8 @@
 ## Desafío 3
 ### Servidor con Express
 
-Visitar el [Proyecto en Glitch][glith]
+
+Visitar el [Proyecto en Glitch][glitch]
 [glitch]: https://fish-marked-stool.glitch.me/
 
 ### Consigna
