@@ -13,7 +13,7 @@ class Contenedor {
       error.code === "ENOENT"
         ? this._createEmptyFile()
         : console.log(
-            `Error Code: ${error.code} | There was an unexpected error when trying to read ${this._filename}`
+            `Error: ${error.code}`
           );
     }
   }
@@ -22,7 +22,7 @@ class Contenedor {
     fs.writeFile(this._filename, "[]", (error) => {
       error
         ? console.log(error)
-        : console.log(`File ${this._filename} was created since it didn't exist in the system`);
+        : console.log(`Se creó el archivo ${this._filename} `);
     });
   }
 
@@ -35,7 +35,7 @@ class Contenedor {
       return parsedData.find((producto) => producto.id === id);
     } catch (error) {
       console.log(
-        `Error Code: ${error.code} | There was an error when trying to get an element by its ID (${id})`
+        `Error : ${error.code} intentando traer el producto ID: (${id})`
       );
     }
   }
@@ -55,12 +55,12 @@ class Contenedor {
         await fs.promises.writeFile(this._filename, JSON.stringify(parsedData));
         return true;
       } else {
-        console.log(`ID ${id} does not exist in the file`);
+        console.log(`ID ${id} no existe`);
         return null;
       }
     } catch (error) {
       console.log(
-        `Error Code: ${error.code} | There was an error when trying to delete an element by its ID (${id})`
+        `Error Code: ${error.code} (${id})`
       );
     }
   }
@@ -83,7 +83,6 @@ class Contenedor {
         await fs.promises.writeFile(this._filename, JSON.stringify(parsedData));
         return true;
       } else {
-        console.log(`ID ${id} does not exist in the file`);
         return null;
       }
 
